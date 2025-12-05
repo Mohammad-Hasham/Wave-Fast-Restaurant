@@ -1,0 +1,61 @@
+html{
+    font-size: 62.5%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: rgb(38, 35, 35);
+    
+}
+
+.Nav-list{
+    display: flex;
+    gap: 1rem;
+    margin: 0 5rem;
+
+
+}
+.Nav-list li {
+    list-style: none;
+
+    
+    
+}
+
+
+.Nav-list li a {
+    text-decoration: none;
+    font-size:1.5rem;
+    color:whitesmoke;
+
+    
+}
+img{
+    max-width: 80px;
+}
+ .nav-order-btn{
+    background-color: red;
+    border: none;
+    width:10rem;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size:1rem ;
+ }
+ .nav-order-btn a{
+    text-decoration: none;
+    color: white;
+
+ }
+
+
+
+
+
