@@ -7,14 +7,17 @@ html{
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100vh;
+}
     /* navbar */
 .nav-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 55px;
+    height: 5.5rem;
     font-size: 1.6rem;
-    background-color: black;
+    background-color:#0e0e0e;
     box-shadow:white(10 ,5  , 6  , 25);
 }
 .nav-uderline{
@@ -71,11 +74,10 @@ img{
  }
  /* Hero section */
  .hero-section{
-    height: 800px;
-    background-color: black;
-    padding: 20px;
-
- }
+background: #000000;
+background: linear-gradient(178deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(255, 255, 255, 1) 70%, rgba(0, 0, 0, 1) 97%);
+height: 500px;
+}
  .grid-container{
     display: grid;
     grid-template-columns:500px 2fr;
@@ -93,14 +95,30 @@ img{
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 2rem;
+margin-top: 2rem; 
+position: relative;
 
 
 }
 .grid-img img{
     max-width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+  z-index: 2;
+  left: 30%;
+    
 
 
+}
+.food-smook{
+    
+    position: absolute;
+  width: 40%;
+    right: 10%;
+  opacity: 0.45;
+  filter: blur(8px);
+  animation: smokeMove 6s infinite linear;
+  z-index: 1;
 }
 .grid-text{
     font-size: 2rem;
@@ -119,19 +137,78 @@ margin-top: 2rem;
 
 .grid-text p{
     margin: 2rem 0;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 .hero-btn{
-    padding: 12px 25px;
-  background: red;
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
+    background-color: rgb(144, 14, 14);
+    border: none;
+    width:10rem;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    
+ }
+ .hero-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+ }
+ .aboute{
+    background-color: #000000;
+    height: 50rem;
+ }
+
+.about-page{
+    background-color: #000000;
+    height: 500px;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 400px 1fr ;
+    height:max-content;
+    align-items: center;
+    justify-items: center;
+};
+ 
+
+.chef-img-div{
+align-self: flex-start;
+
+}
+.chef-img-div img{
+    max-width: 60%;
 }
 
 
+.client-image{
+    height: 200px;
+
+}
+.client-image img{
+    max-width: 400px;
+}
+.aboute-page-text{
+    align-self: flex-end;
+
+}
+.aboute-page-text h4{
+    text-align: flex-start;
+    font-size:2rem ;
+    padding: 1rem;
+    padding-bottom: 1rem;
+}
+.aboute-page-text p{
+    text-align: center;
+    font-size:large;
+    font-weight: 400;
+}
+
+
+.about-chef2-image{
+    align-self: flex-end;
+
+}
 
 
 
