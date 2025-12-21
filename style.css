@@ -5,9 +5,11 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   height: 100vh;
+  width: 100%;
 }
 /* navbar */
 .nav-container {
@@ -36,7 +38,7 @@ body {
 .Nav-list li a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: wheat;
+  color:#ffff;
   cursor: pointer;
 }
 .Nav-list li a:hover {
@@ -60,6 +62,15 @@ img {
   color: white;
   font-size: 1.2rem;
 }
+hr {
+  width: 80px;        /* make the line narrow */
+  margin: 0 auto;     /* center the line */
+  border: none;
+  height: 0.1rem;
+  background-color: #fff;
+  flex: none;
+  text-align: center;
+}
 /* Hero section */
 .hero-section {
   background: #000000;
@@ -70,7 +81,7 @@ img {
     rgba(255, 255, 255, 1) 70%,
     rgba(0, 0, 0, 1) 97%
   );
-  height: 500px;
+  padding:2rem 0;
 }
 .grid-container {
   display: grid;
@@ -188,3 +199,102 @@ img {
   max-width: 200px;
 
 }
+
+/* menu */
+
+
+.Menu-container{
+  background-color: #000000;
+  padding: 2rem ;
+}
+
+.menu-title{
+text-align: center;
+font-size: 1.3em;
+font-weight: 800;
+padding: 2rem  auto ;
+color: #c2292b;
+
+
+}
+.menu-describe{
+  text-align: center;
+  font-size: 4.5em;
+  color: #ffff;
+  padding: 1rem;
+  font-style:inherit;
+  font-weight: 800;
+}
+.menu-paragraph{
+  text-align: center;
+  font-size: 1.3em;
+  color: #ffff;
+  padding: 1em;
+
+}
+
+.food-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;        /* ⭐ enables horizontal scroll */
+  overflow-y: hidden;
+  padding: 1rem;
+  scroll-behavior: smooth;
+
+}
+.food-box::-webkit-scrollbar {
+  height: 8px;
+}
+
+.food-box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+
+.menu-box {
+  flex: 0 0 600px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+  overflow: hidden;
+  max-width: 250px;
+}
+
+.Foods-types-images {
+
+   
+}
+
+.Foods-types-images img {
+ width: 100%;
+ max-width: 100%;
+ height: 250px;      /* ⭐ control image height */
+  object-fit: cover;
+ border: 1px solid #fff;
+ border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+.Foods-types-images img:hover {
+  transform: scale(1.05);
+}
+.Foods-types-title{
+  font-size: 2em;
+  font-weight: 900;
+  color: #ffff;
+  
+}
+
+
+.Foods-types-describe{
+  font-size: 1em;
+  color: rgb(174, 164, 164);
+  padding: 1rem;
+
+}
+
+/* reservations  */
