@@ -77,7 +77,7 @@
       <div class="food-box">
         <div class="menu-box">
           <div class="Foods-types-images">
-          <img  src="Sea food2.jpg" alt="" />
+            <img src="Sea food2.jpg" alt="" />
           </div>
           <h3 class="Foods-types-title">Sea Foods</h3>
           <p class="Foods-types-describe">
@@ -88,7 +88,7 @@
 
         <div class="menu-box">
           <div class="Foods-types-images">
-          <img  src="pizza.jpg" alt="" />
+            <img src="pizza.jpg" alt="" />
           </div>
           <h3 class="Foods-types-title">Types of Pizza</h3>
           <p class="Foods-types-describe">
@@ -99,7 +99,7 @@
 
         <div class="menu-box">
           <div class="Foods-types-images">
-          <img  src="fast food.jpg" alt="" />
+            <img src="fast food.jpg" alt="" />
           </div>
           <h3 class="Foods-types-title">Fast Food</h3>
           <p class="Foods-types-describe">
@@ -110,7 +110,7 @@
 
         <div class="menu-box">
           <div class="Foods-types-images">
-          <img  src="Afghani Food.jpg" alt="" />
+            <img src="Afghani Food.jpg" alt="" />
           </div>
           <h3 class="Foods-types-title">Afghani Food</h3>
           <p class="Foods-types-describe">
@@ -121,7 +121,7 @@
 
         <div class="menu-box">
           <div class="Foods-types-images">
-          <img  src="international food.jpg" alt="" />
+            <img src="international food.jpg" alt="" />
           </div>
           <h3 class="Foods-types-title">international food</h3>
           <p class="Foods-types-describe">
@@ -131,37 +131,44 @@
         </div>
       </div>
     </section>
-    <!-- contact -->
-     <section class="reservation">
-  <h2 class="reservation-title">Make a Reservation</h2>
-  <p class="reservation-text">
-    Book your table in advance and enjoy delicious food with comfort
-  </p>
 
-  <form class="reservation-form">
-    <input type="text" placeholder="Full Name" required />
-    <input type="email" placeholder="Email Address" required />
-    <input type="tel" placeholder="Phone Number" required />
+    <!-- reservation -->
+    <section class="Reservations">
+      <div>
+        <img src="" alt="" />
+      </div>
+      <div>
+        <form action="">
+          <input type="text" placeholder="Full Name"/>
+          <input type="email" placeholder="Email address" />
+          <input
+  type="tel"
+  inputmode="numeric"
+  pattern="[0-9]*"
+  placeholder="Phone Number"
+  required
+/>
+          <div>
+            <input type="date" required />
+            <input type="time" required />
+          </div>
+          <label>Number of Guests</label>
+<input list="guests" placeholder="Choose or type..." />
 
-    <div class="reservation-row">
-      <input type="date" required />
-      <input type="time" required />
-    </div>
+<datalist id="guests">
+  <option value="1 Person">
+  <option value="2 People">
+  <option value="3 People">
+  <option value="4 People">
+  <option value="5 People">
+  <option value="More than 5">
+</datalist>
 
-    <select required>
-      <option value="">Number of Guests</option>
-      <option>1 Person</option>
-      <option>2 People</option>
-      <option>3 People</option>
-      <option>4 People</option>
-      <option>5+ People</option>
-    </select>
+          <textarea placeholder="Spacial request (optional)"></textarea>
 
-    <textarea placeholder="Special Requests (optional)"></textarea>
-
-    <button type="submit">Reserve Now</button>
-  </form>
-</section>
-
+             <button type="submit">reserve Now</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
