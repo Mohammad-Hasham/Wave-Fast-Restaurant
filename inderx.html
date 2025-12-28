@@ -18,7 +18,7 @@
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
-        <button class="nav-order-btn"><a href="">Order Now</a></button>
+        <button class="nav-order-btn">Order Now</button>
       </nav>
     </header>
     <hr />
@@ -34,7 +34,7 @@
             Freshly prepared, mouthwatering dishes made with love. <br />
             Explore our menu and taste the difference!
           </p>
-          <button class="hero-btn"><a href="">Order ↗</a></button>
+          <button class="hero-btn">Order ↗</button>
         </div>
         <div class="grid-img">
           <img class="burger-img" src="burger.png" alt="burger" />
@@ -134,40 +134,63 @@
 
     <!-- reservation -->
     <section class="Reservations">
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div>
-        <form action="">
-          <input type="text" placeholder="Full Name"/>
-          <input type="email" placeholder="Email address" />
-          <input
-  type="tel"
-  inputmode="numeric"
-  pattern="[0-9]*"
-  placeholder="Phone Number"
-  required
-/>
-          <div>
-            <input type="date" required />
-            <input type="time" required />
+      <form class="reservation-form" action="">
+              <h2 class="reservation-title">Booking</h2>
+        <div class="row">
+          <div class="feild">
+            <label for="">Date *</label>
+            <input type="date" />
           </div>
-          <label>Number of Guests</label>
-<input list="guests" placeholder="Choose or type..." />
+          <div class="feild">
+            <label for=""> Time * </label>
+            <input type="time" name="" id="" />
+          </div>
+        </div>
+        <div class="feild">
+          <label for="">People</label>
+          <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">5+</option>
+          </select>
+        </div>
 
-<datalist id="guests">
-  <option value="1 Person">
-  <option value="2 People">
-  <option value="3 People">
-  <option value="4 People">
-  <option value="5 People">
-  <option value="More than 5">
-</datalist>
-
-          <textarea placeholder="Spacial request (optional)"></textarea>
-
-             <button type="submit">reserve Now</button>
-        </form>
+        <div class="row">
+          <div class="feild">
+            <label for="">Name</label>
+            <input type="text" />
+          </div>
+          <div class="feild">
+            <label for="">Last Name</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="feild">
+            <label for="">Email</label>
+            <input type="email" name="" id="" />
+          </div>
+          <div class="feild">
+            <label for="">Phone</label>
+            <input type="tel" name="" id="" />
+          </div>
+        </div>
+          <div class="feild">
+            <label for="">Comment (optional)</label>
+            <textarea name="" id=""></textarea>
+          </div>
+        
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" />
+          <span>Subscribe me to the newsletter</span>
+        </div>
+        <button type="submit">Book a Table</button>
+      </form>
+      <div class="reservation-image">
+        <img src="burger.png" alt="" />
       </div>
     </section>
   </body>
