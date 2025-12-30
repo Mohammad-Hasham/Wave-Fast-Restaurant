@@ -20,12 +20,13 @@ body {
   font-size: 1.6rem;
   background-color: #0e0e0e;
   box-shadow: white(10, 5, 6, 25);
+  
 }
 .nav-uderline {
   margin: 0 10px;
 }
 
-.Nav-list {
+.Nav-list{
   display: flex;
   gap: 1.5rem;
   margin: 0 5rem;
@@ -284,7 +285,14 @@ hr {
 .Reservations {
   display: flex;
   gap: 2rem;
-  padding: 3rem;
+  padding: 5rem;
+  background: linear-gradient(
+    135deg,
+    #0f0f0f,
+    #1a1a1a,
+    #0f0f0f
+  );
+  color: #fff;
 }
 .reservation-title {
   font-size: 5rem;
@@ -296,15 +304,28 @@ hr {
 .reservation-image {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  
 }
 .reservation-image img {
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.6rem;
+  
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.7));
   
 }
 .reservation-form {
   flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+   padding: 40px;
+   border-radius: 2rem;
+   height: 100%;
+   width: 100%;
+  
 }
 .row {
   display: flex;
@@ -329,9 +350,10 @@ textarea {
   border: 1px solid #050505;
   border-radius: 4px;
   font-size: 14px;
+  
 }
 
-button {
+.booking-btn {
   width: 60rem;
   height: 4rem;
   background-color: #c2292b;
@@ -342,6 +364,9 @@ button {
   align-self: center;
   cursor: pointer;
   margin: auto;
+}
+button:hover {
+  background: #e53935;
 }
 
 .checkbox {
@@ -355,4 +380,31 @@ button {
   font-size: 1.3rem;
 }
 
-/* tommorrow i will work on the background and also some style in inpute and text and more  */
+/* Social Media  */
+.social-media{
+  background-color: #050505;
+  
+}
+
+.social-image{
+  margin: auto;
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 2rem;
+}
+.item{
+  overflow: hidden;
+  border-radius: 1.6rem;
+  
+}
+.item img{
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.item2{
+  grid-row: span 2;
+  }
+
