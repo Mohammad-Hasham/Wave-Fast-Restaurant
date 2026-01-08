@@ -383,7 +383,28 @@ button:hover {
 /* Social Media  */
 .social-media{
   background-color: #050505;
+  border-top-left-radius: 1rem;
   
+}
+.social-media h4{
+  color: #c2292b;
+  text-align: center;
+  font-size: small;
+  padding: 0.5rem;
+}
+.media-title{
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.social-media h3{
+  color:#ffff;
+  text-align: center;
+  padding: 0.6rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .social-image{
@@ -392,6 +413,7 @@ button:hover {
    grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 250px);
   gap: 2rem;
+  margin: 0 5rem 4rem;
 }
 .item{
   overflow: hidden;
@@ -407,4 +429,120 @@ button:hover {
 .item2{
   grid-row: span 2;
   }
+/* contact us */
 
+.Stay-connect{
+  display: flex;
+  padding: 3rem;
+  gap:2rem;
+  background-color: rgb(144, 14, 14);
+  border-radius: 3rem;
+  object-fit: cover;
+}
+.contact-image{
+  flex:1;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-image img{
+  max-width: 200px;
+  z-index: 0;
+  position: relative;
+  bottom: 9rem;
+}
+
+
+
+.contact-artical{
+  height: 25rem;
+  width: 32rem;
+  border-radius: 16px;
+  background-color: #c2292b;
+  position:relative;
+   bottom: 15rem;
+   z-index: 1;
+
+}
+ 
+
+
+
+.contact-area{
+  flex: 2;
+  order:2;
+}
+.contact-area h4{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: #fff;
+}
+.contact-area h2{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #ffff;
+
+}
+
+
+
+
+.contact-form{
+
+  padding: 2rem;
+  gap: 2rem;
+}
+.Contact-row{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-feild{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  
+}
+
+
+
+
+
+
+
+.contact-feild input{
+  font-size: 1rem;
+  width:30rem;
+  height: 3.3rem;
+  background-color: #c2292b;
+  border: none;
+  
+}
+
+
+.contact-feild textarea{
+  height: 15rem;
+  width: 62rem;
+  background-color: #c2292b;
+  border: none;
+}
+
+.contact-feild label{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #ffff;
+  
+}
+
+.contact-btn{
+  margin-top: 1rem;
+  width: 62rem;
+  height: 4rem;
+  border-radius: 5px;
+  border: none;
+
+}
