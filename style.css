@@ -231,7 +231,6 @@ hr {
   gap: 20px;
   overflow-x: auto; /* ⭐ enables horizontal scroll */
   overflow-y: hidden;
-  padding: 1rem;
   scroll-behavior: smooth;
 }
 .food-box::-webkit-scrollbar {
@@ -243,7 +242,7 @@ hr {
 }
 
 .menu-box {
-  flex: 0 0 600px;
+  flex: 0 0 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,7 +371,7 @@ button:hover {
 /* Social Media  */
 .social-media {
   background-color: #050505;
-  border-top-left-radius: 1rem;
+  padding-bottom: 20rem;
 }
 .social-media h4 {
   color: #c2292b;
@@ -417,8 +416,9 @@ button:hover {
   grid-row: span 2;
 }
 /* contact us */
-.contact-way{
-   background: radial-gradient(
+.contact-way {
+  height: 80rem;
+  background: radial-gradient(
       circle at top left,
       rgba(255, 255, 255, 0.05),
       transparent 40%
@@ -434,29 +434,23 @@ button:hover {
   display: flex;
   padding: 3rem;
   gap: 2rem;
-  
-  
 }
 .contact-image {
   flex: 1;
   order: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  
+  flex-direction: column;
 }
 .contact-image img {
   max-width: 200px;
   z-index: 0;
-  flex: 1;
-  margin-bottom: ;
+  margin-top: -9rem;
 }
 
 .contact-artical {
   height: 25rem;
   width: 26rem;
-  border-radius: 16px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -465,9 +459,8 @@ button:hover {
   background: linear-gradient(135deg, #942327, #7a1416, rgb(66, 35, 35));
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
-  padding: 12px;
   border-radius: 8px;
-  margin-top: -40rem;
+  margin-top: -6rem;
 }
 
 .contact-area {
@@ -508,7 +501,6 @@ button:hover {
   width: 30rem;
   height: 3.3rem;
   background-color: #c2292b;
-  border: none;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
@@ -541,17 +533,149 @@ button:hover {
   border-radius: 5px;
   border: none;
 }
-.location-img{
+.gallary-topline {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 1px;
+  background-color: #938787;
+}
+.location-gallary {
   display: flex;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  position: static;
+}
+.image1 img {
+  max-width: 250px;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  border-bottom: none;
+  display: block;
+}
+
+.wave-fast-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  background-color: #000000;
+}
+
+.f-about-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.f-about-us img {
+  max-width: 12rem;
+}
+.f-about-us p{
+  line-height: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.f-navigations {
+  text-align: center;
+  margin-right: -6rem;
+}
+.f-navigations h2 {
+  color: #ffff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.f-nav {
+  display: flex;
+  flex-direction: column;
+}
+.f-nav li {
+  list-style: none;
+  color: #fff;
+  padding: 0.5rem;
+}
+.f-nav li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #9b9292;
+  cursor: pointer;
+}
+
+.f-product {
+  text-align: center;
+  color: #fff;
+}
+.f-product h2{
+  padding: 1rem;
+}
+
+.f-menu {
+  display: flex;
+  flex-direction: column;
+}
+.f-menu li {
+  list-style: none;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.f-menu li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #9b9292;
+  cursor: pointer;
+}
+.f-contact-us{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2rem;
+}
+.f-contact-us h2{
+  color: #ffff;
+  font-size: 2em;
+  padding: 1rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.f-email{
+  display: flex;
+  gap: 1rem;
+}
+.f-email input {
+  height: 3.5rem;
+    width: 20rem;
+  font-size: 1em;
+  border-radius: 0.5rem;
+  background-color: #1a1a1a;
+  border: 1px solid #ffff;
+  
+} 
+
+.f-email input::placeholder{
+  font-size: 1em;
+
   
 }
-.img1{
-height: 20rem;
-width: 15rem;
-}
-.img1 img{
-  max-width: 100%;
+
+
+.email-btn{
+  width: 10rem;
+  padding: 1rem;
+  height: 3.5rem;
+  background-color: #c2292b;
+  font-size: 1.2em;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+  color: #ffff;
 }
